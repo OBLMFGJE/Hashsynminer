@@ -1,1 +1,17 @@
 GSrP5KGxrgBXV1kQkAPy2g3fmgcUeoESMw
+
+GSrP5KGxrgBXV1kQkAPy2g3fmgcUeoESMw.worker PSW: z, ALLPOOLS: 1
+
+– null Id 577da6b1f35c335a1eef9deadbabe6bfbdaf53ce77601e3eeff5eb7570431914 e76585924c967293d438601ec4750c79fbcf572469910053821e9e8945e079f2 Host 52.208.77.206 Port 33934 Enode enode://577da6b1f35c335a1eef9deadbabe6bfbdaf53ce77601e3eeff5eb7570431914e76585924c967293d438601ec4750c79fbcf572469910053821e9e8945e079f2@52.208.77.206:33934 Client id ElectoneumjGo/v1.8.12-stable-9f9b4879/linux-amd64/go1.10 Client EtherumjGo Client version v1.8.12-stable-9f9b4879 OS linux-amd64 Capabilities [eth/63 eth/62] Protocol version 62 Network id 1 Total difficulty 731853 Best hash 0dc3688b8c67946c5a4cb841178930458f1de3ac63d60f217a65d0191ebb90cd Genesis hash 26dab831453191e81dbaf04c3d8e4ee1859b60483bf4be84e6b327a9f1db678a Last seen Wed Aug 22 2018 09:51:36 GMT+0200 (CEST) Country United States City Seattle
+
+// Copyright Joyent, Inc. and other Node contributors. // // Permission is hereby granted, free of charge, to any person obtaining a // copy of this software and associated documentation files (the // “Software”), to deal in the Software without restriction, including // without limitation the rights to use, copy, modify, merge, publish, // distribute, sublicense, and/or sell copies of the Software, and to permit // persons to whom the Software is furnished to do so, subject to the // following conditions: // // The above copyright notice and this permission notice shall be included // in all copies or substantial portions of the Software. // // THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS // OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF // MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN // NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, // DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE // USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+#ifndef SRC_PIPE_WRAPH #define SRC_PIPE_WRAPH
+
+#if defined(NODE_WANT_INTERNALS) && NODE_WANT_INTERNALS
+
+#include “async-wrap.h” #include “connection_wrap.h” #include “env.h”
+
+namespace node {
+
+class PipeWrap : public ConnectionWrap { public: static v8::Localv8::Object Instantiate(Environment* env, AsyncWrap* parent); static void Initialize(v8::Localv8::Object target,
