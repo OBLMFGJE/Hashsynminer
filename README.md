@@ -1,55 +1,55 @@
-# Hashsynminer... Rig splitter and Multi address software program
+# spdx-license-ids
 
-*This is Windows software designed for Nvidia 10 series cards
+A list of [SPDX license](https://spdx.org/licenses/) identifiers
 
-*Malaware tried to steal Zcash miner...You may have to exempt sniffdog folder before running Hashsynminer_start.bat
+[**Download JSON**](https://raw.githubusercontent.com/shinnn/spdx-license-ids/master/spdx-license-ids.json)
 
---Hashsynminer-- has been created to Monitor MiningPoolHub.com, Zpool.ca, HashRefinery.com, and Ahashpool.com mining pools in real-time in order to find the most profitable Algo /
+## Use as a JavaScript Library
 
-Auto Benchmarks Each algo to get optimal speeds and benches throughout monitoring 
+[![NPM version](https://img.shields.io/npm/v/spdx-license-ids.svg)](https://www.npmjs.org/package/spdx-license-ids)
+[![Bower version](https://img.shields.io/bower/v/spdx-license-ids.svg)](https://github.com/shinnn/spdx-license-ids/releases)
+[![Build Status](https://travis-ci.org/shinnn/spdx-license-ids.svg?branch=master)](https://travis-ci.org/shinnn/spdx-license-ids)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/spdx-license-ids.svg)](https://coveralls.io/r/shinnn/spdx-license-ids)
+[![devDependency Status](https://david-dm.org/shinnn/spdx-license-ids/dev-status.svg)](https://david-dm.org/shinnn/spdx-license-ids#info=devDependencies)
 
-Fully automated / Set And Forget in Hashsynminer_start.bat/
+### Installation
 
-# Please edit Hashsynminer_start.bat
+#### Package managers
 
-# SplitSniffCC and SplitSniffEWBF(please set these before you start miner in Hashsynminer_start.bat)
+##### [npm](https://www.npmjs.com/)
 
-Very Important... SplitsniffCC (ccminer) must use quotation and commas for each GPU selected (ie: '0,1,2,3,4,5,6,7')
+```sh
+npm install spdx-license-ids
+```
 
-Very Important... SplitSniffEWBF (equihash) must use quotation without commas for each GPU selected (ie: '0 1 2 3 4 5 6 7')
+##### [bower](http://bower.io/)
 
-# (This is an exampl of how to set for auto convert to btc at Zpool.ca, Hashrefinery.com, and Ahashpool.com)
+```sh
+bower install spdx-license-ids
+```
 
-1) Place your Bitcoin address after -Wallet in Hashsynminer_start.bat.bat
+##### [Duo](http://duojs.org/)
 
-2) -Passwordcurrency BTC
+```javascript
+const spdxLicenseIds = require('shinnn/spdx-license-ids');
+```
 
-2) Register at MiningPoolHub and input your -Username and -Workername to Hashsynminer_start.bat. You must also setup at Miningpoolhub to autoswitch to Bitcoin and place your Bitcoin address in bitcoin tab
+#### Standalone
 
-3) -RigName the name you want to call your mining at Ahashpool.com, Hashrefinery.com, and Zpool.ca
+[Download the script file directly.](https://raw.githubusercontent.com/shinnn/spdx-license-ids/master/spdx-license-ids-browser.js)
 
-# This is how to set for a different currency other than btc at Zpool.ca, Hashrefinery.com
+### API
 
-1) If you don't want to be paid in Bitcoin at Hashrefinery or Zpool you can choose -Passwordcurrency *Note( Make sure you add same currency wallet address in -Wallet for the same -Passwordcurrency chosen. Auto default is BTC for a BTC wallet address)... Please read each pool to see what the operators can pay you in altcoins and be diligent when not using BTC
+#### spdxLicenseIds
 
-# Price ticker btc/currency
+Type: `Array` of `String`
 
-Choose which Currency you would like bitcoin to be in and stats for that currency "i.e USD, EUR, etc
+It returns an array of SPDX license identifiers.
 
-# Algos to bench
+```javascript
+const spdxLicenseIds = require('spdx-license-ids'); //=> ['Glide', 'Abstyles', 'AFL-1.1', ... ]
+```
 
-*It is very Important at this point to choose algos and then let everything bench first before moving onto pools, intervals, and delays but if you want to just mine one pool...please remove the algo's that are not in that pool you wish to mine at...
+## License
 
-# Pools, Intervals, and Delays
-
-1) Then go back into Hashsynminer_start.bat and select which pool you wish to be at and interval(in seconds) you would like to recheck the pools to see if another algo is worth switching too (Default is 90 seconds)
-
-2) Delay(in seconds) for how long before miners switching from 1 instance of algo to another (Default is 1 second)
-
-# Go out with your friends and enjoy life! This is designed to catch market rise on coins when you're not there!
-
-Auto Downloads Miners /   
-
-This is a free project feel free to donate be much appreciated. Arronance btc address: 1MsrCoAt8qM53HUMsUxvy9gMj3QVbHLazH and nemosminer address: 1QGADhdMRpp9Pk5u5zG1TrHKRrdK5R81TE Sniffdog address... in the Hashsynminer_start.bat :)
-
-Attached is readme file for more info
+[The Unlicense](./LICENSE).
